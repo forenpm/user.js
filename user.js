@@ -453,7 +453,7 @@ user_pref("_user.js.parrot", "0800 syntax error: the parrot's ceased to be!");
  * dropdown, or using keyword search shortcuts you configure in options (e.g. 'd' for DuckDuckGo)
  * [SETUP-CHROME] If you don't, or rarely, type URLs, or you use a default search
  * engine that respects privacy, then you probably don't need this ***/
-user_pref("keyword.enabled", false);
+user_pref("keyword.enabled", true);
 /* 0802: disable location bar domain guessing
  * domain guessing intercepts DNS "hostname not found errors" and resends a
  * request (e.g. by adding www or .com). This is inconsistent use (e.g. FQDNs), does not work
@@ -1471,8 +1471,8 @@ user_pref("privacy.resistFingerprinting", true);
  * The override values are a starting point to round from if you want some control
  * [1] https://bugzilla.mozilla.org/1330882
  * [2] https://hardware.metrics.mozilla.com/ ***/
-   // user_pref("privacy.window.maxInnerWidth", 1000);
-   // user_pref("privacy.window.maxInnerHeight", 1000);
+   user_pref("privacy.window.maxInnerWidth", 1400);
+   user_pref("privacy.window.maxInnerHeight", 1100);
 /* 4503: disable mozAddonManager Web API [FF57+]
  * [NOTE] As a side-effect in FF57-59 this allowed extensions to work on AMO. In FF60+ you also need
  * to sanitize or clear extensions.webextensions.restrictedDomains (see 2662) to keep that side-effect
