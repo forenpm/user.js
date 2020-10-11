@@ -1471,8 +1471,8 @@ user_pref("privacy.resistFingerprinting", true);
  * The override values are a starting point to round from if you want some control
  * [1] https://bugzilla.mozilla.org/1330882
  * [2] https://hardware.metrics.mozilla.com/ ***/
-   user_pref("privacy.window.maxInnerWidth", 1400);
-   user_pref("privacy.window.maxInnerHeight", 1100);
+   user_pref("privacy.window.maxInnerWidth", 1600);
+   user_pref("privacy.window.maxInnerHeight", 1200);
 /* 4503: disable mozAddonManager Web API [FF57+]
  * [NOTE] As a side-effect in FF57-59 this allowed extensions to work on AMO. In FF60+ you also need
  * to sanitize or clear extensions.webextensions.restrictedDomains (see 2662) to keep that side-effect
